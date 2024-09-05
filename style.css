@@ -405,14 +405,14 @@ nav.scrolled a:after {
 
 .bigger-text {
     font-size: 18px;
-    color: #CDCDCD;
+    color: white;
     font-weight: 200;
     line-height: 1.5;
 }
 
 .smaller-text {
     font-size: 16px;
-    color: #CDCDCD;
+    color: white;
     font-weight: 200;
     line-height: 1.5;
     margin-top: 30px;
@@ -509,12 +509,13 @@ nav.scrolled a:after {
 .mail-item{
     display: flex;
     width: 200px;
-    justify-content: space-between;
+    justify-content: left;
     padding-top: 10px;
 }
 
 .mail-item i{
     margin-top: 4px;
+    margin-right: 20px;
 }
 
 .mail-info{
