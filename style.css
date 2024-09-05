@@ -249,6 +249,7 @@ nav.scrolled a:after {
 
 .card-link:hover {
     background-color: #388E3C;
+    color: white !important;
 }
 
 .bold.green {
@@ -520,6 +521,17 @@ nav.scrolled a:after {
     width: 30%;
 }
 
+.mail-info a{
+    text-decoration: none !important;
+    color: white !important;
+    transition: color 1s;
+}
+
+.mail-info a:hover{
+    text-decoration: none !important;
+    color: grey !important;
+}
+
 @media screen and (max-width: 600px) {
     .topnav {
       display: block;
@@ -587,6 +599,7 @@ nav.scrolled a:after {
         height: auto;
     }
 
+   
 
     #intro {
         margin-top: 100px;
@@ -610,11 +623,12 @@ nav.scrolled a:after {
 
     .bio-text {
         padding: 0;
+        margin-top: 50px;
     }
 
     .info{
         width: 100%;
-        margin-top: 20px;
+        padding-top: 20px;
     }
 
     .info-card{
@@ -657,6 +671,8 @@ nav.scrolled a:after {
         height: 700px;
         padding-bottom: 750px;
     }
+
+    
 
     .contact-wrap{
         flex-direction: column;
