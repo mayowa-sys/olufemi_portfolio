@@ -1,0 +1,63 @@
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    color: white;
+    transition: background 0.5s ease;
+}
+
+nav.scrolled {
+    background: white;
+}
+
+nav.scrolled a {
+    color: black !important;
+    transition: 0.5s;
+}
+
+nav.scrolled a:hover {
+    color: #ADF802 !important;
+    
+}
+
+nav a {
+    margin-left: 25px;
+    color: white !important;
+    margin-right: 25px;
+    font-size: 15px;
+    position: relative;
+    padding-bottom: 5px;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+nav a:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #4CAF50;
+    width: 0;
+    text-decoration: none;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.5s ease;
+}
+
+nav a:hover:after {
+    width: 100%;
+    color: white !important;
+}
+
+nav.scrolled a:after {
+    display: none; /* Disable underline animation in scrolled state */
+}
+
+.hidden {
+    visibility: hidden;
+}
+
