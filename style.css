@@ -627,11 +627,19 @@ nav.scrolled a:after {
         margin-top: 50px;
     }
 
-    .info{
-        width: 100%;
-        padding-top: 20px;
+    .section-header{
+        margin-bottom: 20px;
     }
 
+    .info{
+        width: 100%;
+        padding-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .info-container{
+        margin-top: 0px;
+    }
     .info-card{
         padding: 10px;
         height: fit-content;
@@ -642,10 +650,19 @@ nav.scrolled a:after {
         padding-bottom: 20px;
     }
 
+    .resume-container{
+        margin-top: 0px;
+    }
+
     .info-summary{
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+    .project-container{
+        margin-top: 20px;
+    }
+
     .project-container,
     .resume-container {
         flex-direction: column;
