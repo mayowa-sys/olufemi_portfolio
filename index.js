@@ -37,3 +37,40 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("bio-img");
+            let dots = document.getElementsByClassName("dot");
+
+            // Hide all slides initially
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Reset the index if it's greater than the number of slides
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+
+            // Remove active state from all dots
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            // Display the current slide and highlight the dot
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+
+            // Set the timing for the slideshow (e.g., 5 seconds)
+            setTimeout(showSlides, 5000);
+            
+        }
+
+        // Optional: Function for manual navigation using dots
+        function currentSlide(n) {
+            slideIndex = n - 1;
+            showSlides();
+        }
+
+

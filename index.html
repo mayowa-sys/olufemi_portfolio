@@ -13,7 +13,7 @@
     
     <header id="header">
         <nav id="desktopNavbar">
-            <a href="#header" class="active">HOME</a>
+            <a href="#header">HOME</a>
             <a href="#portfolio">PORTFOLIO</a>
             <a href="#resume">RESUME</a>
             <a href="#about">ABOUT</a>
@@ -21,7 +21,7 @@
           </nav>
           
           <div class="topnav" id="myTopnav">
-            <a href="#header" class="active">HOME</a>
+            <a href="#header">HOME</a>
             <a href="#portfolio">PORTFOLIO</a>
             <a href="#resume">RESUME</a>
             <a href="#about">ABOUT</a>
@@ -139,7 +139,24 @@
     </section>
     <section id="about">
         <div class="bio">
-            <div class="bio-img"></div>
+            <div class="slideshow-container">
+                <div class="bio-img fade">
+                    <img src="images\about-2.jpg" alt="Image 1">
+                </div>
+                <div class="bio-img fade">
+                    <img src="images\about-3.jpg" alt="Image 2">
+                </div>
+                <div class="bio-img fade">
+                    <img src="images\about-4.jpg" alt="Image 3">
+                </div>
+            
+                <!-- Navigation dots (optional) -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
             <div class="bio-text">
                 <h1>About <span class="bold">Me</span></h1>
                 <p class="bigger-text">I have over 14 years of experience in sales, commercial leadership, data analytics, and business operations, working
